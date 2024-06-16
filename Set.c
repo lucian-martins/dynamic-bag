@@ -4,17 +4,6 @@
 #include "New.h"
 #include "Object.h"
 
-void *new(const void *type, ...) {
-    const size_t size = *(const size_t *) type;
-    void *pointer = calloc(1, size);
-    assert(pointer);
-    return pointer;
-}
-
-void delete(void *_item) {
-    free(_item);
-}
-
 void *addElement(void *_set, const void *_element) {
     Set *set = _set;
     Object *element = (void *) _element;
@@ -50,10 +39,6 @@ void *removeElement(void *_set, const void *_element) {
         --set->count;
     }
     return element;
-}
-
-bool differs(const void *a, const void *b) {
-    return a != b;
 }
 
 unsigned countElements(const void *_set) {

@@ -4,8 +4,7 @@
 #include "Set.h"
 
 int main(void) {
-    static const size_t sizeOfSet = sizeof(Set);
-    static const size_t sizeOfObject = sizeof(Object);
+
     const void *Set = &sizeOfSet;
     const void *Object = &sizeOfObject;
 

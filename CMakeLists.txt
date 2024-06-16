@@ -8,4 +8,6 @@ add_executable(DynamicBag main.c
         New.h
         Object.h
         Set.c
+        New.c
+        Object.c
 )
