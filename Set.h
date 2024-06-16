@@ -5,6 +5,9 @@ typedef struct Set {
     unsigned count;
 } Set;
 
+static const size_t sizeOfSet = sizeof(Set);
+
+
 void *addElement(void *set, const void *element);
 
 void *findElement(const void *set, const void *element);
